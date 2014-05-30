@@ -29,7 +29,7 @@ fos_rest:
         groups:               []
         serialize_null:       false
     view:
-        default_engine:       twig
+        default_engine:       ~
         force_redirects:
 
             # Prototype

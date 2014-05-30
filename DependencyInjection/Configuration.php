@@ -115,7 +115,7 @@ class Configuration implements ConfigurationInterface
                     ->fixXmlConfig('force_redirect', 'force_redirects')
                     ->addDefaultsIfNotSet()
                     ->children()
-                        ->scalarNode('default_engine')->defaultValue('twig')->end()
+                        ->scalarNode('default_engine')->defaultValue(null)->end()
                         ->arrayNode('force_redirects')
                             ->useAttributeAsKey('name')
                             ->defaultValue(array('html' => true))
